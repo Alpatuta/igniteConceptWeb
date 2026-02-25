@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --igniteGreen: RGBA(0, 137, 125, 1);
+  --igniteWhite: RGBA(255, 255, 255, 1);
+  --igniteBlack: RGBA(0, 0, 0, 1);
+  --igniteBeige: RGBA(245, 245, 230, 1);
+}
+
+#aterrizaInnovacion {
+  background-image: url("img/imagenPresentacion.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.display-4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--igniteWhite);
+  text-shadow: 2px 2px 4px var(--igniteGreen);
+}
+
+.display-5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--igniteGreen);
+}
+
+.display-6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--igniteBlack);
+}
+
+/* ── SECCIÓN CONTACTO ── */
+#aterrizaContacto {
+  background-color: var(--igniteBeige);
+}
+
+.contacto-subtitulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--igniteBlack);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Inputs */
+.form-ignite {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  border: 2px solid RGBA(0, 137, 125, 0.3);
+  border-radius: 8px;
+  outline: none;
+  background: RGBA(0, 137, 125, 0.04);
+  color: var(--igniteBlack);
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+
+.form-ignite:focus {
+  border-color: var(--igniteGreen);
+  box-shadow: 0 0 0 3px RGBA(0, 137, 125, 0.15);
+  background: var(--igniteWhite);
+}
+
+.form-ignite::placeholder {
+  color: RGBA(0, 0, 0, 0.4);
+}
+
+/* Botón formulario */
+.btn-ignite {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--igniteGreen);
+  color: var(--igniteWhite);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.25s,
+    transform 0.15s;
+}
+
+.btn-ignite:hover {
+  background-color: RGBA(0, 110, 100, 1);
+  transform: translateY(-2px);
+}
+
+.btn-wpp {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: #25d366;
+  color: var(--igniteWhite);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition:
+    background-color 0.25s,
+    transform 0.15s,
+    box-shadow 0.25s;
+  box-shadow: 0 4px 15px RGBA(37, 211, 102, 0.35);
+}
+
+.btn-wpp:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px RGBA(37, 211, 102, 0.45);
+  color: var(--igniteWhite);
+}
